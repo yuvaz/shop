@@ -43,6 +43,7 @@ body{
 	background: url("../images/banner.png") no-repeat;
 	background-size:cover;
 	min-height:650px;
+	position:relative;
 }
 .header-top {
 	background: rgba(0, 0, 0, 0.4);
@@ -70,11 +71,14 @@ body{
 	text-transform: capitalize;
 	margin: 0 1em;
 	font-family: 'Gentium Book Basic', serif;
-	font-weight: 800;
+	font-weight: 100;
+	text-shadow: 2px 2px 2px #cc9901;
 }
 .top-menu ul li a:hover{
-	color:#000;
-	text-transform: capitalize;
+	color:#ccc;
+}
+.top-menu ul li a:hover span{
+	border-bottom:1xp solid #ccc;
 }
 .social-icon {
 	float:right;
@@ -107,12 +111,14 @@ body{
 }
 .baneer-center {
 	text-align: center;
-	width: 70%;
-	margin: 0 auto;
-	padding: 31em 0 10px;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    bottom: 10px;
+    position: absolute;
 }
 .baneer-center h1 {
-	    font-size: 5em;
+	font-size: 4em;
     color: #f4f2f0;
     font-family: 'Yeseva One', cursive;
     font-weight: 400;
@@ -179,7 +185,7 @@ a.button1:hover {
 }
 
 .igredients{
-	background:url("../images/banner2.jpg") no-repeat;
+	background:url("../images/idly.jpg") no-repeat;
 	background-size:cover;
 	min-height:750px; 
 }
@@ -747,7 +753,7 @@ a.button1:hover {
 			}
 			.baneer-center h1 {
 				font-size: 3.8em;
-				padding-bottom: 25px;
+				padding-bottom: 9px;
 			}
 			.about{
 				min-height:520px;
@@ -900,7 +906,7 @@ a.button1:hover {
 						margin-right: 2%;
 				}
 				.top-menu {
-					padding-top: 1.57em;
+					padding-top: 46px;
 				}
 				.top-menu ul li a {
 					font-size: 1.08em;
@@ -1098,7 +1104,7 @@ a.button1:hover {
 			height: 25px;
 			display: block;
 			right: 15px;
-			top: 6px;
+			top: 10px;
 		}
 		.top-menu {
 			float:none;
@@ -1119,7 +1125,7 @@ a.button1:hover {
 			display:block;
 			float:none;
 			margin: 0em;
-			border-bottom: 1px solid #4B6075;
+			border-bottom: 1px solid #998978;
 			border-right:none;
 		}
 		.top-menu ul li {
@@ -1131,9 +1137,10 @@ a.button1:hover {
 			margin:15px 0;
 			z-index: 999;
 			position: absolute;
-			width: 96%;
-			background:#2e3e4e;
+			width: 100%;
+			background:#4a433c;
 			text-align: center;
+			border-bottom: 1px solid #998978;
 		}
 		.top-menu ul li a {
 			display: block;
@@ -1141,7 +1148,7 @@ a.button1:hover {
 		}
 		
 		.baneer-center {
-			width: 60%;
+			width: 95%;
 		}
 		.header {
 			min-height: 348px;
@@ -1178,7 +1185,7 @@ a.button1:hover {
 			width:95%;
 		}
 		.baneer-center{
-			width: 58%;
+			width: 95%;
 		}
 		.baneer-center h1 {
 			font-size: 2em;
@@ -1298,11 +1305,12 @@ a.button1:hover {
 		}
 		.top-menu  ul
 		{
-			width: 93%;
+			width: 100%;
 		}
 		.baneer-center {
-			width: 79%;
-			padding-top: 1.1em;
+			width: 95%;
+    padding-top: 0;
+    font-size: 0.61em;
 		}
 		.buttons {
 			padding-top: 15px;
@@ -1311,7 +1319,7 @@ a.button1:hover {
 			margin: 0px 0;
 		}
 		.top-menu ul li {
-			padding: 3px 0;
+			padding: 10px 0;
 		}
 		.baneer-center h1 {
 			line-height: 1.1em;
@@ -1404,6 +1412,7 @@ a.button1:hover {
 
 		padding-top: 0.5em;
 		}
+	}
 	@media(max-width:320px){
 		.header {
 			min-height: 240px;
@@ -1415,7 +1424,7 @@ a.button1:hover {
 			padding-top: 1em;
 		}
 		.baneer-center {
-			width: 100%;
+			width: 90%;
 			padding-top: 2.55em;
 		}
 		.baneer-center h1 {
@@ -1423,7 +1432,6 @@ a.button1:hover {
 			padding-bottom: 5px;
 			font-size: 1.8em;
 			overflow: hidden;
-			height: 28px;
 			}
 		a.button {
 			font-size: 10px;
@@ -1532,4 +1540,34 @@ a.button1:hover {
 			font-weight: 400;
 			font-size: 1em;
 		}
+	}
+	
+	
+	.back{
+		background: #000;
+		font-family: 'Lato', sans-serif;
+	}
+	.back a{
+		color: #fff;
+		padding: 10px;
+		display: inline-block;
+		cursor: pointer;
+	}
+	.back + #home {
+		height: 100px!important;
+		min-height: 130px;
+		background-position: center;
+		background-size: cover;
+	}
+	.more_links{
+		color:#fff;
+		font-family: 'Lato', sans-serif;
+		cursor:pointer;
+	}
+	.level3_head{
+		text-align: left;
+    	border-bottom: 1px dotted #ccc;
+	}
+	.level3_head + p{
+		height:auto!important;
 	}
