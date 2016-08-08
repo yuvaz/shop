@@ -46,6 +46,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
 	new WOW().init();
 </script>
+<script type="text/javascript">
+	$(window).on("load", function() {
+		$('.loader').css({display:"none"},10);
+	});
+</script>
+
 <!---/End-Animation---->
 </head>
 <body>
@@ -158,7 +164,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="menu-grid">
           <div class="tzatsikis">
             <div class="tzatsiki">
-              <h4>Chicken Briyani Combo1</h4>
+              <h4>Chicken Briyani Combo 1</h4>
             </div>
             <div class="dollar">
               <h4>€10</h4>
@@ -170,7 +176,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="menu-grid">
           <div class="tzatsikis">
             <div class="tzatsiki">
-              <h4>Idly Combo2</h4>
+              <h4>Idly Combo 2</h4>
             </div>
             <div class="dollar">
               <h4>€8</h4>
@@ -448,5 +454,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   </div>
 </div>
 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<div class="loader">
+	<img src="images/loading.gif" class=""  alt="" />
+</div>
 </body>
 </html>
